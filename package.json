@@ -1,6 +1,6 @@
 {
   "name": "soap_salesforce",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A NodeJS library that facilitates login into Salesforce SOAP API, and provide basic functionality for calling most used Salesforce API methods.",
   "main": "salesforce.js",
   "dependencies": {

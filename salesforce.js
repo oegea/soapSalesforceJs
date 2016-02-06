@@ -11,7 +11,7 @@ function Salesforce(username, password, token, wsdl) {
     this.username = username;
     this.password = password;
     this.token = token;
-    this.wsdl = wsdl || "./wsdl/enterprise.xml";
+    this.wsdl = wsdl || "./node_modules/soap_salesforce/wsdl/enterprise.xml";
 
     //Other properties
     this.promise; //A promise will be used for returning soapClient after finishing Salesforce login
