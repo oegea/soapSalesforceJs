@@ -1,6 +1,6 @@
 {
   "name": "soap_salesforce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS library that facilitates login into Salesforce SOAP API, and provide basic functionality for calling most used Salesforce API methods.",
   "main": "salesforce.js",
   "dependencies": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oegea/soapSalesforceJs.git"
+    "url": "git+https://github.com/oegea/soap_salesforce.git"
   },
   "keywords": [
     "salesforce",
@@ -28,7 +28,7 @@
   "author": "Oriol Egea",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/oegea/soapSalesforceJs/issues"
+    "url": "https://github.com/oegea/soap_salesforce/issues"
   },
-  "homepage": "https://github.com/oegea/soapSalesforceJs#readme"
+  "homepage": "https://github.com/oegea/soap_salesforce#readme"
 }

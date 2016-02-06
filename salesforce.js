@@ -1,17 +1,17 @@
 /**
  * Salesforce connection library constructor.
  */
-function Salesforce() {
+function Salesforce(username, password, token, wsdl) {
 
     //Required NodeJS libraries
     this.q = require("q");
     this.soap = require("soap");
 
     //Salesforce access data
-    this.username = "";
-    this.password = "";
-    this.token = "";
-    this.wsdl = "./wsdl/enterprise.xml";
+    this.username = username;
+    this.password = password;
+    this.token = token;
+    this.wsdl = wsdl || "./wsdl/enterprise.xml";
 
     //Other properties
     this.promise; //A promise will be used for returning soapClient after finishing Salesforce login
