@@ -106,27 +106,27 @@ Salesforce.prototype.FormatQuery = function(query){
 Salesforce.prototype.EscapeSOQL = function(field) {
     //TODO: It's a little rudimentary. Maybe other options will be better than replace method.
     //Escape newline and others
-    field = field.replace('\\n','');
-    field = field.replace('\\r','');
-    field = field.replace('\\t','');
-    field = field.replace('\\b','');
-    field = field.replace('\\f','');
+    field = field.replace(new RegExp('\\n',"g"),'');
+    field = field.replace(new RegExp('\\r',"g"),'');
+    field = field.replace(new RegExp('\\t',"g"),'');
+    field = field.replace(new RegExp('\\b',"g"),'');
+    field = field.replace(new RegExp('\\f',"g"),'');
     //Escape in capital letters too.
-    field = field.replace('\\N','');
-    field = field.replace('\\R','');
-    field = field.replace('\\T','');
-    field = field.replace('\\B','');
-    field = field.replace('\\F','');
+    field = field.replace(new RegExp('\\N',"g"),'');
+    field = field.replace(new RegExp('\\R',"g"),'');
+    field = field.replace(new RegExp('\\T',"g"),'');
+    field = field.replace(new RegExp('\\B',"g"),'');
+    field = field.replace(new RegExp('\\F',"g"),'');
     //Escape \
-    field = field.replace('\\','\\\\');
+    field = field.replace(new RegExp('\\\\',"g"),'\\\\');
     //Escape '
-    field = field.replace("'","\'");
+    field = field.replace(new RegExp("'","g"),"\\'");
     //Escape "
-    field = field.replace('"','\"');
+    field = field.replace(new RegExp('"',"g"),'\\"');
     //Escape _
-    field = field.replace("_","\_");
+    field = field.replace(new RegExp("_","g"),"\\_");
     //Escape %
-    field = field.replace("%","\%");
+    field = field.replace(new RegExp("%","g"),"\\%");
     return field;
 };
 
