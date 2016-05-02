@@ -3,6 +3,8 @@
 soap_salesforce is a library that facilitates login into Salesforce SOAP API, and provide basic functionality for calling most used Salesforce API methods.
 Specifically it is designed to be used with an Enterprise WSDL, but it can be easily adapted in order to use other kind of Salesforce WSDL files.
 
+Short "how to use" guide is available ([here](https://www.oriol.im/how-to-consume-salesforce-soap-service-with-nodejs/)).
+
 ## Code Example
 
 ### Initializing and querying Salesforce
